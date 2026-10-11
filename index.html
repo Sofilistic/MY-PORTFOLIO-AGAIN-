@@ -197,8 +197,8 @@ button {
 .hero {
   position: relative;
   max-width: var(--page-max);
-  margin: 0 auto;
-  border-top: 0;
+  margin: 0 0 clamp(1.2rem, 2.3vw, 2rem);
+  border-top: 1px;
   border-radius: 0 0 var(--radius-hero) var(--radius-hero);
   padding: clamp(1rem, 2.1vw, 1.8rem) clamp(1rem, 2.6vw, 2.3rem) clamp(4rem, 6.5vw, 6rem);
 }
@@ -627,7 +627,7 @@ button {
   position: relative;
   max-width: 20em;
   margin: 0 0 clamp(1.5rem, 3vw, 2.6rem) 20%;
-  transform: translateX(3rem);
+  transform: translateX(4rem);
   font-family: var(--font-approach-intro);
   font-size: clamp(1.15rem, 2.3vw, 2.05rem);
   line-height: 1.12;
