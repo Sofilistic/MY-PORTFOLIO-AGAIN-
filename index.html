@@ -73,6 +73,7 @@
   --color-white: #ffffff;
   --color-black: #000000;
   --color-blue: rgba(119, 145, 238, 0.5); /* #7791EE at 50% */
+  --color-blue2: rgba(119, 145, 238);
 
   /* Font roles */
   --font-nav: "Canva Sans", "Arial Fallback", Arial, sans-serif;
@@ -198,7 +199,8 @@ button {
   position: relative;
   max-width: var(--page-max);
   margin: 0 0 clamp(1.2rem, 2.3vw, 2rem);
-  border-top: 1px var(--color-blue);
+  border: 0
+  border-top: 1px var(--color-blue2);
   border-radius: 0 0 var(--radius-hero) var(--radius-hero);
   padding: clamp(1rem, 2.1vw, 1.8rem) clamp(1rem, 2.6vw, 2.3rem) clamp(4rem, 6.5vw, 6rem);
 }
@@ -545,7 +547,7 @@ button {
   height: 0;
   margin: 0 0 clamp(1.2rem, 2.3vw, 2rem);
   border: 0;
-  border-top: 1px dashed var(--color-blue);
+  border-top: 1px var(--color-blue2);
 }
 
 .portfolio .section-heading {
