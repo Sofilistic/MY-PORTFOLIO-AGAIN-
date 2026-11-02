@@ -146,6 +146,7 @@ ul {
   font-family: var(--font-label);
   font-size: max(10px, calc(7.5 * var(--u)));
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 0.02em;
   white-space: nowrap;
   box-shadow: 0 0 calc(18 * var(--u)) calc(6 * var(--u)) rgba(0, 0, 0, 0.12);
@@ -570,16 +571,17 @@ ul {
 
   <!-- ===== HEADER (shared) ===== -->
     <header class="site-header" aria-label="Site header">
-    <a class="brand-label" href="index.html">BRAND &amp; CONTENT CREATIVE</a>
+  <a class="site-badge" href="index.html">Brand &amp; Content Creative</a>
 
-    <nav class="header-nav" aria-label="Main navigation">
-      <!-- These point to the matching sections on the existing portfolio homepage. -->
-      <a href="index.html#top">Home</a>
-      <a href="index.html#about">About</a>
-      <a href="index.html#portfolio">Portfolio</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-    </header>
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html#top">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main class="campaigns">
     <h1 class="page-title">CAMPAIGNS.</h1>
@@ -587,7 +589,7 @@ ul {
     <!-- ===== PROJECT 1: MORI ===== -->
     <section class="project project--first" aria-labelledby="mori-title">
       <div class="project-cta">
-        <a class="connect-button" href="contact.html">Connect With Me</a>
+        <a class="connect-button" href="index.html#contact">Connect With Me</a>
       </div>
 
       <h2 class="project-title" id="mori-title">MORI - JUST ONE MORE</h2>
@@ -616,7 +618,7 @@ ul {
     <!-- ===== PROJECT 2: CIVIC24 ===== -->
     <section class="project project--after-divider" aria-labelledby="civic-title">
       <div class="project-cta">
-        <a class="connect-button" href="contact.html">Connect With Me</a>
+        <a class="connect-button" href="index.html#contact">Connect With Me</a>
       </div>
 
       <h2 class="project-title" id="civic-title">CIVIC24</h2>
@@ -645,10 +647,10 @@ ul {
       <div class="footer-links">
         <nav aria-label="Footer">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#top">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </nav>
         <a class="back-to-top" href="#top"><span aria-hidden="true">&uarr;</span> Back To Top</a>
