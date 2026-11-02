@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Case Studies & Pitch Decks — Sophia St-Matthew</title>
+  <meta 
+    name="description" 
+    content="Selected brand, content, community, and growth marketing case studies and pitch decks by Sophia St-Matthew."/>
+ <link rel="preload" href="assets/fonts/anton-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/cinzel-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <style>
+  /*
+  Sophia St-Matthew — Case Studies page
+  The screenshot's licensed brand fonts were not supplied with the project.
+  See README.md before publishing. The decorative wordmark itself is preserved
+  as a traced SVG asset, so it does not depend on an Ahsing font fallback.
+*/
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --color-blue: rgb(119 145 238 / 50%);
+  --color-blue2: rgb(119 145 238 / 100%);
+  --content-width: 89.68%;
+
+  /* Intended font names; add licensed local files in assets/fonts/ when available. */
+  --font-heading: "Lovelace Text", "Bodoni MT", Didot, Georgia, serif;
+  --font-editorial: "The Seasons", "Bodoni MT", Didot, Georgia, serif;
+  --font-navigation: "Canva Sans", Arial, sans-serif;
+  --font-copy: "Arial MT Pro", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--white);
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+}
+
+body {
+  margin: 0;
+  color: var(--black);
+  background: var(--white);
+  font-family: var(--font-copy);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.skip-link {
+  position: absolute;
+  z-index: 10;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--white);
+  background: var(--black);
+  transform: translateY(-180%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.site-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: clamp(42px, 7.8vw, 70px);
+  padding: clamp(10px, 2.14vw, 18px) 2.7% 0 6.1%;
+}
+
+.brand-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(29.2vw, 220px);
+  min-width: 0;
+  height: clamp(14px, 2.5vw, 18px);
+  margin: clamp(15px, 2.85vw, 26px) 0 0;
+  padding: 0 0.45rem;
+  border-radius: 999px;
+  color: var(--white);
+  background: var(--black);
+  font-family: var(--font-editorial);
+  font-size: clamp(5.5px, 1.2vw, 10px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: min(50.5vw, 500px);
+  height: clamp(16px, 2.85vw, 22px);
+  border: 0.7px solid var(--black);
+  border-radius: 999px;
+  font-family: var(--font-navigation);
+  font-size: clamp(6px, 1.1vw, 10px);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.header-nav a,
+.footer-nav a {
+  white-space: nowrap;
+}
+
+.header-nav a:focus-visible,
+.footer-nav a:focus-visible,
+.back-to-top:focus-visible,
+.connect-button:focus-visible,
+.footer-email:focus-visible {
+  outline: 1px solid var(--black);
+  outline-offset: 3px;
+}
+
+.page-main {
+  width: var(--content-width);
+  margin: clamp(20px, 4.45vw, 36px) auto 0;
+}
+
+.intro {
+  position: relative;
+  height: clamp(70px, 8.6vw, 124px);
+}
+
+.intro h1 {
+  width: max-content;
+  margin: 0 0 0 3px;
+  font-family: var(--font-heading);
+  font-size: clamp(29px, 6.1vw, 64px);
+  font-weight: 600;
+  line-height: 0.96;
+  letter-spacing: -0.025em;
+}
+
+.connect-button {
+  position: absolute;
+  top: clamp(44px, 4vw, 56px);
+  right: -1.1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(88px, 20vw, 150px);
+  height: clamp(22px, 3.9vw, 30px);
+  padding: 0 0.5rem;
+  border-radius: 999px;
+  color: var(--white);
+  background: var(--black);
+  font-family: var(--font-editorial);
+  font-size: clamp(7px, 1.25vw, 10px);
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.project-list {
+  margin-top: clamp(24px, 6.4vw, 64px);
+}
+
+.project-card {
+  width: 100%;
+  margin: 0;
+}
+
+.project-card--one {
+  margin-bottom: 5vw;
+}
+
+.project-card--two {
+  margin-bottom: 5.15vw;
+}
+
+.project-card--three {
+  margin-bottom: 5.7vw;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2.4 / 1;
+  object-fit: cover;
+  background: var(--black);
+}
+
+.project-category {
+  margin: 8px 0 0;
+  font-family: var(--font-copy);
+  font-size: clamp(12px, 0.95vw, 14px);
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.project-description {
+  margin: 2px 0 0;
+  font-family: var(--font-copy);
+  font-size: clamp(17px, 1.25vw, 20px);
+  font-weight: 400;
+  line-height: clamp(20px, 1.4vw, 22px);
+}
+
+.site-footer {
+  width: 100%;
+  padding: 17px 2.5% 9px;
+  color: var(--white);
+  background: var(--black);
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  align-items: start;
+  min-height: 51px;
+  width: 100%;
+  font-family: var(--font-copy);
+  font-size: clamp(6px, 0.66vw, 10px);
+  line-height: 1.3;
+}
+
+.footer-intro {
+  max-width: 190px;
+  margin: 0;
+  padding-right: 1rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  padding-left: 0;
+  font-size: inherit;
+  line-height: 1.3;
+}
+
+.back-to-top {
+  justify-self: end;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.back-to-top span {
+  display: inline-block;
+  margin-right: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 1.15em;
+}
+
+.footer-wordmark {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 12px auto 0;
+}
+
+.footer-contact-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 10px;
+  margin-top: 32px;
+  font-family: var(--font-copy);
+  font-size: clamp(6px, 0.66vw, 10px);
+  line-height: 1.2;
+}
+
+.footer-email {
+  display: inline-block;
+  max-width: 44%;
+  overflow-wrap: anywhere;
+}
+
+.social-icons {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transform: translateX(-50%);
+}
+
+.social-icon,
+.social-icon svg {
+  display: block;
+  width: clamp(12px, 2.25vw, 14px);
+  height: clamp(12px, 2.25vw, 14px);
+}
+
+.footer-copyright {
+  margin: 17px 0 0;
+  font-family: var(--font-copy);
+  font-size: clamp(6px, 0.66vw, 10px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+@media (min-width: 900px) {
+  .project-list {
+    margin-top: clamp(55px, 4.4vw, 72px);
+  }
+
+  .project-card--one {
+    margin-bottom: clamp(32px, 3vw, 44px);
+  }
+
+  .project-card--two {
+    margin-bottom: clamp(34px, 3.1vw, 46px);
+  }
+
+  .project-card--three {
+    margin-bottom: clamp(36px, 3.2vw, 48px);
+  }
+
+  .project-category {
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+
+  .project-description {
+    margin-top: 3px;
+  }
+
+  .footer-top {
+    min-height: 64px;
+  }
+
+  .footer-wordmark {
+    margin-top: 14px;
+  }
+
+  .footer-contact-row {
+    margin-top: clamp(30px, 2vw, 38px);
+  }
+
+  .footer-copyright {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .brand-label {
+    letter-spacing: -0.025em;
+  }
+
+  .connect-button {
+    right: 0;
+  }
+
+  .project-category {
+    margin-top: 7px;
+  }
+
+  .site-footer {
+    padding-top: 14px;
+    padding-bottom: 9px;
+  }
+
+  .footer-top {
+    min-height: 45px;
+    font-size: 6px;
+  }
+
+  .footer-intro {
+    padding-right: 0.65rem;
+  }
+
+  .footer-contact-row {
+    margin-top: 20px;
+  }
+
+  .footer-copyright {
+    margin-top: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+</style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" aria-label="Site header">
+    <p class="brand-label">BRAND &amp; CONTENT CREATIVE</p>
+
+    <nav class="header-nav" aria-label="Main navigation">
+      <!-- These point to the matching sections on the existing portfolio homepage. -->
+      <a href="/#home">Home</a>
+      <a href="/#about">About</a>
+      <a href="/#portfolio">Portfolio</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main" class="page-main">
+    <section class="intro" aria-labelledby="page-title">
+      <h1 id="page-title">CASE<br>STUDIES.</h1>
+      <a class="connect-button" href="/#contact">CONNECT WITH ME</a>
+    </section>
+
+    <section class="project-list" aria-label="Case studies">
+      <article class="project-card project-card--one">
+        <img class="project-image" src="assets/project-01-placeholder.svg" alt="" width="1200" height="500">
+        <p class="project-category">Consumer | FMCG</p>
+        <p class="project-description">Turning an everyday essential into a brand worth noticing.</p>
+      </article>
+
+      <article class="project-card project-card--two">
+        <img class="project-image" src="assets/project-02-placeholder.svg" alt="" width="1200" height="500">
+        <p class="project-category">SaaS | DevTools</p>
+        <p class="project-description">Positioning a visual AI-powered API testing tool for developers</p>
+      </article>
+
+      <article class="project-card project-card--three">
+        <img class="project-image" src="assets/project-03-placeholder.svg" alt="" width="1200" height="500">
+        <p class="project-category">Community Marketing</p>
+        <p class="project-description">Turning trust into a competitive advantage.</p>
+      </article>
+
+      <article class="project-card project-card--four">
+        <img class="project-image" src="assets/project-04-placeholder.svg" alt="" width="1200" height="500">
+        <p class="project-category">Growth Marketing</p>
+        <p class="project-description">Turning trust into a competitive advantage.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-top">
+      <p class="footer-intro">Every interesting project starts with a conversation. Tell me what you're building.</p>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="/#home">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#portfolio">Portfolio</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+
+      <a class="back-to-top" href="#top" data-back-to-top><span aria-hidden="true">↑</span> Back To Top</a>
+    </div>
+
+    <!-- This vector is traced from the decorative wordmark in the supplied screenshot.
+         It preserves the letterforms without pretending the Ahsing font file is present. -->
+    <img class="footer-wordmark" src="assets/sophia-st-matthew-wordmark.svg" alt="Sophia St-Matthew" width="533" height="31">
+
+    <div class="footer-contact-row">
+      <!-- Replace this visible placeholder with the exact portfolio email before publishing. -->
+      <a class="footer-email" href="mailto:your-email@example.com">your-email@example.com</a>
+
+      <!-- The reference shows three social icons, but actual profile URLs were not supplied.
+           Keep the marks visible; turn them into links once the correct profiles are known. -->
+      <div class="social-icons" aria-label="Social profiles; profile links not supplied">
+        <span class="social-icon" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#fff"/><path d="M6.5 9.3h2.6v8H6.5zm1.3-4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M10.6 9.3h2.5v1.1c.5-.8 1.3-1.4 2.5-1.4 2.5 0 3.1 1.6 3.1 3.8v4.5h-2.6v-4c0-1 0-2.1-1.3-2.1s-1.5 1-1.5 2.1v4h-2.6z" fill="#000"/></svg>
+        </span>
+        <span class="social-icon" aria-label="Pinterest">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#fff"/><path d="M12.5 4.6c-4 0-6.1 2.8-6.1 5.2 0 1.4.5 2.7 1.7 3.2.2.1.4 0 .5-.2l.2-.8c.1-.3 0-.4-.2-.7-.4-.5-.7-1.1-.7-2 0-2.5 1.9-4.7 4.9-4.7 2.7 0 4.2 1.6 4.2 3.8 0 2.9-1.3 5.4-3.2 5.4-1.1 0-1.9-.9-1.6-2.1.3-1.4 1-2.9 1-3.9 0-.9-.5-1.6-1.4-1.6-1.1 0-2 1.2-2 2.7 0 1 .3 1.7.3 1.7l-1.2 5c-.4 1.7-.1 3.8 0 4 0 .1.2.1.3 0 .1-.2 1.4-1.7 1.8-3.3l.6-2.4c.3.7 1.3 1.3 2.3 1.3 3 0 5-2.7 5-6.4 0-2.8-2.4-5.4-6.4-5.4" fill="#000"/></svg>
+        </span>
+        <span class="social-icon" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#fff"/><rect x="5.8" y="5.8" width="12.4" height="12.4" rx="3.5" fill="none" stroke="#000" stroke-width="1.8"/><circle cx="12" cy="12" r="3" fill="none" stroke="#000" stroke-width="1.8"/><circle cx="16.3" cy="7.9" r="1" fill="#000"/></svg>
+        </span>
+      </div>
+    </div>
+
+    <p class="footer-copyright">© 2026 Sophia St-Matthew — All Rights Reserved</p>
+  </footer>
+  <script>
+    "use strict";
+
+// The native #top anchor remains usable without JavaScript. This adds smooth
+// scrolling where supported and respects the user's reduced-motion preference.
+const backToTopLink = document.querySelector("[data-back-to-top]");
+
+if (backToTopLink) {
+  backToTopLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({
+      top: 0,
+      behavior: reduceMotion ? "auto" : "smooth",
+    });
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+  });
+}
+  </script>
+</body>
+</html>
