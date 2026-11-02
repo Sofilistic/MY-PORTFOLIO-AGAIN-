@@ -106,6 +106,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
 }
 
 body {
@@ -1393,14 +1394,13 @@ a.social-icon:hover {
               Menu
             </button>
             <ul class="nav-list" id="nav-list">
-              <li><a href="index.html" aria-current="page">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#top">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
-        </header>
-
+          </header>
         <div class="hero-stage">
           <h1 class="hero-title">
             <span class="hero-title__line">
@@ -1432,7 +1432,7 @@ a.social-icon:hover {
       </div>
 
       <!-- ============ INTRODUCTION ============ -->
-      <section class="intro" aria-label="Introduction">
+      <section class="intro" id="about" aria-label="Introduction">
         <p>
           Hello, I'm Sophia St-Matthew. I'm a brand and content professional who enjoys figuring out why people pay
           attention and what makes brands memorable. I combine strategy, consumer psychology, and creativity to help
@@ -1465,35 +1465,29 @@ a.social-icon:hover {
           I help brands design their dreams,<br />
           and then I make those dreams come true.
         </p>
-        <a class="hire-me" href="contact.html">
+        <a class="hire-me" href="#contact">
           <img src="assets/images/hire-me-oval.svg" alt="" width="209" height="103" />
           <span>HIRE ME</span>
         </a>
       </section>
 
       <!-- ============ PORTFOLIO ============ -->
-      <section class="portfolio" aria-labelledby="portfolio-title">
+      <section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
         <hr class="portfolio__rule" />
         <h2 class="section-heading" id="portfolio-title">Portfolio</h2>
         <ul class="portfolio-grid">
           <li>
-            <a class="portfolio-card" href="portfolio.html#case-studies">
+            <a class="portfolio-card" href="case-studies-pitch-deck.html">
               <span class="portfolio-card__media" aria-hidden="true"></span>
-              <span class="portfolio-card__label">Case Studies</span>
+              <span class="portfolio-card__label">Case Studies &amp; Pitch Decks</span>
             </a>
           </li>
           <li>
-            <a class="portfolio-card" href="portfolio.html#campaigns">
+            <a class="portfolio-card" href="ad-creatives-campaigns.html">
               <span class="portfolio-card__media" aria-hidden="true"></span>
-              <span class="portfolio-card__label">Campaigns</span>
+              <span class="portfolio-card__label">Ad Creatives &amp; Campaigns</span>
             </a>
-          </li>
-          <li>
-            <a class="portfolio-card" href="portfolio.html#ad-creatives">
-              <span class="portfolio-card__media" aria-hidden="true"></span>
-              <span class="portfolio-card__label">Ad Creatives</span>
-            </a>
-          </li>
+          </li> 
           <li>
             <a class="portfolio-card" href="portfolio.html#copywriting">
               <span class="portfolio-card__media" aria-hidden="true"></span>
@@ -1503,7 +1497,7 @@ a.social-icon:hover {
           <li>
             <a class="portfolio-card" href="portfolio.html#email-marketing">
               <span class="portfolio-card__media" aria-hidden="true"></span>
-              <span class="portfolio-card__label">Email Marketing/Campaigns</span>
+              <span class="portfolio-card__label">Email Marketing Campaigns</span>
             </a>
           </li>
           <li>
@@ -1516,12 +1510,6 @@ a.social-icon:hover {
             <a class="portfolio-card" href="portfolio.html#research-insights">
               <span class="portfolio-card__media" aria-hidden="true"></span>
               <span class="portfolio-card__label">Research &amp; Insights</span>
-            </a>
-          </li>
-          <li>
-            <a class="portfolio-card" href="portfolio.html#pitch-decks">
-              <span class="portfolio-card__media" aria-hidden="true"></span>
-              <span class="portfolio-card__label">Pitch Decks</span>
             </a>
           </li>
           <li>
@@ -1648,17 +1636,17 @@ a.social-icon:hover {
     </main>
 
     <!-- ============ FOOTER ============ -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="contact">
       <div class="site-footer__inner">
         <div class="footer-top">
           <p class="footer-top__text">Every interesting project starts with a conversation. Tell me what you're building.</p>
           <div class="footer-top__aside">
             <nav class="footer-nav" aria-label="Footer">
               <ul>
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
             <button class="back-to-top" type="button" data-back-to-top>
